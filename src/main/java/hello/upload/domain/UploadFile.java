@@ -1,12 +1,15 @@
 package hello.upload.domain;
 
+import lombok.Data;
+
+@Data
 public class UploadFile {
 
-    private final String uploadFileName;
-    private final String storeFileName;
+    private final String uploadFilename;
+    private final String storeFilename;
 
-    public UploadFile(String uploadFileName, String storeFileName) {
-        this.uploadFileName = uploadFileName;
-        this.storeFileName = storeFileName;
+    public UploadFile(String uploadFilename, String storeFilename) {
+        this.uploadFilename = uploadFilename;
+        this.storeFilename = storeFilename;
     }
 }
